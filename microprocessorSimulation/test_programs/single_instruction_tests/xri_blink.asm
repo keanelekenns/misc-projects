@@ -1,0 +1,8 @@
+00000100 Add seven to accumulator
+00000111 
+00101100 exclusive or with 255
+11111111
+01111100 jump to three
+00000011
+00000000
+00000001 HLT

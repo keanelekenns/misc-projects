@@ -1,0 +1,4 @@
+Go ahead with the 8008 simulation, but add one more feature after the
+main simulator is largely complete. That is, create a version of the
+8008 which has a two-stage pipeline (stage one: fetch/decode; stage
+two: execute/writeback). This is similar to the AVR.

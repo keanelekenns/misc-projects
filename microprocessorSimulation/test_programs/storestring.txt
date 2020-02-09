@@ -1,0 +1,87 @@
+This program stores an ascii string into memory location 200 - 210.
+
+Memory address,
+Ascii char,
+Binary representation of Ascii:
+
+  256      257      258      259      260      261      262      263      264      265     266
+
+  'S'   |  't'   |  'o'   |  'n'   |  'y'   |  'l'   |  'a'   |  'k'   |  'e'   |  '.'   |  0
+
+01010011 01110100 01101111 01101110 01111001 01101100 01100001 01101011 01100101 00101110 00000000
+
+
+Pseudocode:
+- Set L and H to point to mem[256]
+- Store 'S' into mem[256]
+- Set L and H to point to mem[257]
+- Store 't' into mem[257]
+...
+- Set L and H to point to mem[266]
+- Store 0 into mem[266]
+- Halt
+
+
+Location  	Instruction			BINARY INSTR
+
+0					LLI 0		00110110
+1								00000000
+2					LHI 256		00101110
+3								00000001
+4					LMI	'S'		00111110
+5								01010011
+6					INL			00110000
+5					LMI	't'		00111110
+6								01110100
+7					INL			00110000
+8					LMI	'o'		00111110
+9								01101111
+10					INL			00110000
+11					LMI	'n'		00111110
+12								01101110
+13					INL			00110000
+14					LMI	'y'		00111110
+15								01111001
+16					INL			00110000
+17					LMI	'l'		00111110
+18								01101100
+19					INL			00110000
+20					LMI	'a'		00111110
+21								01100001
+22					INL			00110000
+23					LMI	'k'		00111110
+24								01101011
+25					INL			00110000
+26					LMI	'e'		00111110
+27								01100101
+28					INL			00110000
+29					LMI	'.'		00111110
+30								00101110
+31					INL			00110000
+32					LMI	0		00111110
+33								00000000
+34					INL			00110000
+35					HLT 		11111111
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

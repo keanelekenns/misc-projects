@@ -1,0 +1,8 @@
+00101110 LHI
+00000001
+00110110 LLI
+00000000
+00111110 LMI: Memory location two fifty six.
+00001010
+11010111 LCM: Load memory two fifty six into C.
+11111111 HLT

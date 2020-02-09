@@ -1,0 +1,55 @@
+Initialize memory address 200 to 0 and increment it 5 times.
+Program should terminate with memory address 200 containing 5.
+
+Instructions used:
+Index reg instructions:
+- Lrr
+- LrI
+- LrM
+- LMr
+- DCr
+Accumulator group instructions:
+- ADI
+- CPI
+Program Counter and Stack Control Instructions:
+- JFc
+Machine Instructions:
+- HLT
+
+Pseudocode:
+
+- Store 0 in memory address 200 (abbreviated as mem[200]).
+- Store 5 in register C; decrement this in each loop and when it reaches zero we're done.
+- Loop:
+	- Load mem[200] into accumulator.
+	- Increment accumulator
+	- Store accumulator into mem[200].
+	- Decrement register C.
+	- Load accumulator with register C.
+	- Compare accumulator with zero.
+	- Branch if not zero to Loop.
+- Halt
+
+Location  	Instruction			BINARY INSTR 	Comment
+
+0					LLI 0		00110110
+1								00000000
+2					LHI	256		00101110
+3								00000001
+4					ADI 0		00000100		From accumulator store zero in mem[256]
+5								00000000
+6					LMA			11111000
+7					LCI 5		00010110
+8								00000101
+9			Loop:	LAM 		11000111		Load mem[256] into accumulator
+10					ADI 1		00000100		Increment accumulator
+11								00000001
+12					LMA 		11111000		Store accumulator into mem[256]
+13					DCC			00010001		Decrement register C
+14					LAC 		11000010		Copy register C to accumulator
+15					CPI 0 		00111100		Accumulator = 0?
+16								00000000
+17					JFZ loop 	01001000		If not, jump to Loop.
+18								00001001
+19								00000000
+20					HLT 		11111111		Else halt.
