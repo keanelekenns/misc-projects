@@ -1,5 +1,5 @@
-Spring 2019 CSC 360 Assignment 3: LLFS
-Keanelek Enns V00875807
+File System Project (Course information removed)
+Keanelek Enns
 
 NOTE TO MARKER:
 Thank you for all your work. My submission is late, but that is because I just
