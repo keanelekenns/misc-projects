@@ -1,13 +1,6 @@
 File System Project (Course information removed)
-Keanelek Enns
 
-NOTE TO MARKER:
-Thank you for all your work. My submission is late, but that is because I just
-had too much going on (e.g. two exams, one on the night it was due, and another
-major project). That being said, I had it mostly complete (as you can see I submitted
-an earlier copy on Thursday night), but I wasn't quite ready in the demonstration component.
-So I hope what I have added today helps you mark this thing smoothlessly and painlessly,
-and I hope you appreciate all the work that went into this.
+Keanelek Enns
 
 RUNNING MY SCRIPT (test.sh):
 The bash script must be run from within the apps folder (everything will be in 
