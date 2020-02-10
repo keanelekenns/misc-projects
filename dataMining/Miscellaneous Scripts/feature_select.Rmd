@@ -1,0 +1,23 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+```{r}
+
+data = read.table('Adult/adult.data.clean',header=T,sep=',')
+attach(data)
+
+names(data)
+str(data)
+
+model = lm(salary ~ Age + Workclass + fnlwgt + Education + Education.num + marital.status + occupation + relationship + race + sex + capital.gain + capital.loss + hours.per.week + native.country)
+
+summary(model)
+```
+
+```{r}
+model = lm(salary ~ Age + Education + Education.num + marital.status + relationship + sex + hours.per.week)
+
+summary(model)
+```
+
